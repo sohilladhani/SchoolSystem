@@ -1,0 +1,8 @@
+#exclude out/ folder
+**/out
+
+*.iml
+
+.directory
+
+**/.idea

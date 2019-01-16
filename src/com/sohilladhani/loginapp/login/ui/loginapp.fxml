@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sohilladhani.loginapp.login.controllers.LoginController">
+    <Label layoutX="14.0" layoutY="14.0" text="DB Status:"/>
+    <Label fx:id="dbStatus" layoutX="114.0" layoutY="14.0" prefHeight="15.0" prefWidth="200.0"/>
+    <Label layoutX="14.0" layoutY="65.0" prefHeight="15.0" prefWidth="98.0" text="Username:"/>
+    <Label layoutX="14.0" layoutY="104.0" prefHeight="15.0" prefWidth="98.0" text="Password:"/>
+    <TextField fx:id="userName" layoutX="112.0" layoutY="60.0" promptText="Enter username"/>
+    <PasswordField fx:id="password" layoutX="112.0" layoutY="99.0" promptText="Enter password"/>
+    <ComboBox fx:id="selectionComboBox" layoutX="114.0" layoutY="181.0" prefHeight="25.0"
+              prefWidth="171.0" promptText="Admin/Student"/>
+    <Button fx:id="loginButton" layoutX="114.0" layoutY="226.0" mnemonicParsing="false"
+            onAction="#onLoginPressed" prefHeight="25.0" prefWidth="171.0" text="Login"/>
+    <Label fx:id="loginStatus" layoutX="114.0" layoutY="280.0" prefHeight="15.0" prefWidth="171.0"/>
+</AnchorPane>
